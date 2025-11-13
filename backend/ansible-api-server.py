@@ -4,6 +4,8 @@ from typing import Optional
 
 from fastapi import FastAPI, Request, HTTPException, Query
 from fastapi.responses import JSONResponse
+import os
+import uvicorn
 
 app = FastAPI()
 
@@ -102,7 +104,10 @@ if __name__ == '__main__':
         print("  GET  /api/v1/get-applied-patches")
         print("==============================================")
 
-        uvicorn.run(app, host="127.0.0.1", port=5000)
+        port = int(os.environ.get("PORT", 5000))  # fallback to 5000 locally
+        
+        uvicorn.run(app, host="0.0.0.0", port=5000, reload=True)
     except Exception:
         # If uvicorn is not installed, fall back to ASGI reference server import failure message
         print("uvicorn is not available. Install uvicorn to run the FastAPI server (pip install uvicorn fastapi)")
+        
