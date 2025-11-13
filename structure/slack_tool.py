@@ -48,9 +48,9 @@ class SlackTool(BaseTool):
         try:
             conn = psycopg2.connect(
                 dbname="workshop",
-                user="edb_admin",
-                password="Spr!ng20232025",
-                host="p-hjctr79xu3-a-rw-external-ea91f117847d15d5.elb.eu-west-2.amazonaws.com",
+                user="XXXX",
+                password="sddsfdsf0232025",
+                host="p-hjctr79sdfsdfsdfdsdfsdfs.com",
                 port="5432"
             )
             logger.info("Database connection established.")
