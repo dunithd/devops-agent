@@ -1,0 +1,37 @@
+[
+  {
+    "hostname": "prod-web-01",
+    "environment": "prod",
+    "owner": "team-checkout",
+    "installed_package": "openssl-lib",
+    "package_version": "v1.2.3"
+  },
+  {
+    "hostname": "prod-web-02",
+    "environment": "prod",
+    "owner": "team-checkout",
+    "installed_package": "openssl-lib",
+    "package_version": "v1.2.3"
+  },
+  {
+    "hostname": "prod-db-01",
+    "environment": "prod",
+    "owner": "team-data",
+    "installed_package": "nginx",
+    "package_version": "1.21.0"
+  },
+  {
+    "hostname": "stage-web-01",
+    "environment": "staging",
+    "owner": "team-checkout",
+    "installed_package": "openssl-lib",
+    "package_version": "v1.2.3"
+  },
+  {
+    "hostname": "stage-api-01",
+    "environment": "staging",
+    "owner": "team-api",
+    "installed_package": "openssl-lib",
+    "package_version": "v1.2.4"
+  }
+]
